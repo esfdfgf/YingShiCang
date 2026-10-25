@@ -13,26 +13,9 @@
   "bind": [],
   "sites": [
     {"key": "feifan", "name": "🍂┃非凡┃资源", "type": 1, "api": "https://ffzy5.tv/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": ""},
-    {"key": "ruyi", "name": "🍂┃如意┃资源", "type": 1, "api": "https://cj.rycjapi.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": ""},
     {"key": "hongniu", "name": "🍂┃红牛┃资源", "type": 1, "api": "https://www.hongniuzy2.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": ""},
     {"key": "baofeng", "name": "🍂┃暴风┃资源", "type": 1, "api": "https://bfzyapi.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": ""},
-    {"key": "subo", "name": "🍂┃速播┃资源", "type": 1, "api": "https://www.suboapi.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": ""},
-    {"key": "tianma", "name": "🍂┃天马┃资源", "type": 1, "api": "https://www.tianmaapi.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": ""},
-    {"key": "jinying", "name": "🍂┃金鹰┃资源", "type": 1, "api": "https://www.jinyingapi.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": ""},
-    {"key": "guangsu", "name": "🍂┃光速┃资源", "type": 1, "api": "https://www.guangsuapi.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": ""},
-    {"key": "kuaiche", "name": "🍂┃快车┃资源", "type": 1, "api": "https://www.kuaicheapi.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": ""},
-    {"key": "qidian", "name": "🍂┃起点┃资源", "type": 1, "api": "https://www.qidianapi.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": ""},
-    {"key": "xuehua", "name": "🍂┃雪花┃资源", "type": 1, "api": "https://www.xuehuazy.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": ""},
-    {"key": "diguang", "name": "🍂┃地光┃资源", "type": 1, "api": "https://www.diguangapi.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": ""},
-    {"key": "hehuan", "name": "🍂┃合欢┃资源", "type": 1, "api": "https://www.hehuanzy.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": ""},
-    {"key": "ukuu", "name": "🍂┃U酷┃资源", "type": 1, "api": "https://www.ukuapi.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": ""},
-    {"key": "diwang", "name": "🍂┃帝王┃资源", "type": 1, "api": "https://www.diwangzy.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": ""},
-    {"key": "mengjing", "name": "🍂┃梦境┃资源", "type": 1, "api": "https://www.mengjingapi.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": ""},
-    {"key": "feixu", "name": "🍂┃飞旭┃资源", "type": 1, "api": "https://www.feixuapi.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": ""},
-    {"key": "shuangyu", "name": "🍂┃双鱼┃资源", "type": 1, "api": "https://www.shuangyuapi.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": ""},
-    {"key": "juhe", "name": "🍂┃聚合┃资源", "type": 1, "api": "https://www.juheapi.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": ""},
-    {"key": "aiyy", "name": "🍂┃爱看┃资源", "type": 1, "api": "https://www.aiyyapi.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": ""},
-    {"key": "douban", "name": "📚┃豆瓣┃评分", "type": 3, "api": "csp_Douban", "searchable": 1, "quickSearch": 1, "filterable": 0, "ext": ""}
+    {"key": "liangzi", "name": "🍂┃量子┃资源", "type": 1, "api": "https://cj.lziapi.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1, "ext": ""}
   ],
   "sitesParams": [],
   "parses": [
