@@ -1,0 +1,116 @@
+{
+  "spider": "",
+  "wallpaper": "",
+  "logo": "",
+  "playUrl": "",
+  "direct": [],
+  "shell": [],
+  "ads": "",
+  "download": 0,
+  "upnp": 0,
+  "uart": 0,
+  "push": {},
+  "bind": [],
+  "sites": [
+    {
+      "key": "iQIYI",
+      "name": "爱奇艺",
+      "type": 3,
+      "api": "https://www.iqiyi.com",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": ""
+    },
+    {
+      "key": "QQ",
+      "name": "腾讯视频",
+      "type": 3,
+      "api": "https://v.qq.com",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": ""
+    },
+    {
+      "key": "WPS",
+      "name": "优酷视频",
+      "type": 3,
+      "api": "https://youku.com",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": ""
+    }
+  ],
+  "sitesParams": [],
+  "parses": [
+    {
+      "name": "聚合修复",
+      "type": 1,
+      "url": "",
+      "ext": {
+        "flag": [
+          "qq","qq.sourceustv","qq.gnt","qq.qq",
+          "qiyi","qiyi.qiyi","qiyi.renrenmi","qiyi.qiy",
+          "youku","youku.youku","youku.youkubi",
+          "imgo","imgo.mgtv","imgo.mgtv818",
+          "sohu","sohu.tv","sohu.tvsohu",
+          "1905","1905.1905",
+          "mgtv","mgtv.mgtv",
+          "le","le.le",
+          "xigua","xigua.xigua"
+        ]
+      }
+    },
+    {
+      "name": "官方解析",
+      "type": 0,
+      "url": "https://jx.playerjy.com/?url=",
+      "ext": {
+        "flag": ["qq","qiyi","youku","imgo","sohu","mgtv","le","xigua","1905"]
+      }
+    }
+  ],
+  "flags": [
+    "qq","qiyi","youku","imgo","sohu","mgtv","le","xigua","1905",
+    "qq.sourceustv","qq.gnt","qq.qq",
+    "qiyi.qiyi","qiyi.renrenmi","qiyi.qiy",
+    "youku.youku","youku.youkubi",
+    "imgo.mgtv","imgo.mgtv818",
+    "sohu.tv","sohu.tvsohu",
+    "1905.1905",
+    "mgtv.mgtv",
+    "le.le",
+    "xigua.xigua"
+  ],
+  "lives": [
+    {
+      "name": "央视直播",
+      "type": 0,
+      "url": "https://raw.githubusercontent.com/Er PioneerTV/IPTV/main/cctv.m3u",
+      "epg": "https://epg.51zmt.top:8000/api/diyp/?ch={epg}&date={date}",
+      "ua": "",
+      "click": ""
+    },
+    {
+      "name": "卫视直播",
+      "type": 0,
+      "url": "https://raw.githubusercontent.com/Er PioneerTV/IPTV/main/st.m3u",
+      "epg": "https://epg.51zmt.top:8000/api/diyp/?ch={epg}&date={date}",
+      "ua": "",
+      "click": ""
+    }
+  ],
+  "rules": [],
+  "sorts": [
+    {
+      "name": "热播榜",
+      "key": "hot"
+    },
+    {
+      "name": "新品榜",
+      "key": "new"
+    }
+  ]
+}
