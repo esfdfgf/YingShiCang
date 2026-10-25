@@ -21,12 +21,12 @@ import java.util.Set;
 
 /** The public, published release and its existing multi-ABI publication manifest. */
 public final class GitHubRelease {
-    public static final String API_URL = "https://api.github.com/repos/LuckyWDGS/YingShiCang/releases/latest";
+    public static final String API_URL = "https://www.wm.com/releases/latest";
     public static final int MAX_RELEASE_BYTES = 1_048_576;
     public static final int MAX_MANIFEST_BYTES = 262_144;
     private static final long MAX_APK_BYTES = 300_000_000;
-    private static final String WEB_ROOT = "https://github.com/LuckyWDGS/YingShiCang/releases/";
-    private static final String API_ROOT = "https://api.github.com/repos/LuckyWDGS/YingShiCang/releases/";
+    private static final String WEB_ROOT = "https://www.wm.com/releases/";
+    private static final String API_ROOT = "https://www.wm.com/api/releases/";
     private static final String MANIFEST = "release-manifest.json";
     private static final String NO_NOTES = "此版本未提供更新说明。";
 
@@ -195,23 +195,26 @@ public final class GitHubRelease {
 
     private static boolean bool(JsonObject object, String name) throws IOException {
         JsonElement element = object.get(name);
-        if (element == null || !element.isJsonPrimitive() || !element.getAsJsonPrimitive().isBoolean())
+        if (element == null || element.isJsonNull()) throw new IOException("版本信息缺少有效字段：" + name);
+        if (!element.isJsonPrimitive() || !element.getAsJsonPrimitive().isBoolean())
             throw new IOException("版本信息缺少有效字段：" + name);
-        return element.getAsBoolean();
+        return element.getAsJsonPrimitive().getAsBoolean();
     }
 
     private static long number(JsonObject object, String name, long min, long max) throws IOException {
         JsonElement element = object.get(name);
-        if (element == null || !element.isJsonPrimitive() || !element.getAsJsonPrimitive().isNumber()
-                || !element.getAsString().matches("[0-9]+")) throw new IOException("版本信息数字格式错误：" + name);
-        long number = Long.parseLong(element.getAsString());
+        if (element == null || element.isJsonNull()) throw new IOException("版本信息缺少有效字段：" + name);
+        if (!element.isJsonPrimitive() || !element.getAsJsonPrimitive().isNumber()
+                || !element.getAsJsonPrimitive().getAsString().matches("[0-9]+")) throw new IOException("版本信息数字格式错误：" + name);
+        long number = Long.parseLong(element.getAsJsonPrimitive().getAsString());
         if (number < min || number > max) throw new IOException("版本信息数字超出范围：" + name);
         return number;
     }
 
     private static JsonArray array(JsonObject object, String name) throws IOException {
         JsonElement value = object.get(name);
-        if (value == null || !value.isJsonArray()) throw new IOException("版本信息缺少附件列表：" + name);
+        if (value == null || value.isJsonNull()) throw new IOException("版本信息缺少附件列表：" + name);
+        if (!value.isJsonArray()) throw new IOException("版本信息缺少附件列表：" + name);
         return value.getAsJsonArray();
     }
 
