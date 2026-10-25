@@ -13,90 +13,89 @@
   "bind": [],
   "sites": [
     {
-      "key": "iQIYI",
-      "name": "爱奇艺",
-      "type": 3,
-      "api": "https://www.iqiyi.com",
+      "key": "subo",
+      "name": "速播资源",
+      "type": 1,
+      "api": "https://www.suboapi.com/api.php/provide/vod/?ac=list",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 0,
+      "filterable": 1,
       "ext": ""
     },
     {
-      "key": "QQ",
-      "name": "腾讯视频",
-      "type": 3,
-      "api": "https://v.qq.com",
+      "key": "hongniu",
+      "name": "红牛资源",
+      "type": 1,
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod/?ac=list",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 0,
+      "filterable": 1,
       "ext": ""
     },
     {
-      "key": "WPS",
-      "name": "优酷视频",
-      "type": 3,
-      "api": "https://youku.com",
+      "key": "tianma",
+      "name": "天马资源",
+      "type": 1,
+      "api": "https://www.tianmaapi.com/api.php/provide/vod/?ac=list",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 0,
+      "filterable": 1,
+      "ext": ""
+    },
+    {
+      "key": "ruyi",
+      "name": "如意资源",
+      "type": 1,
+      "api": "https://api.ruyizy.com/api.php/provide/vod/?ac=list",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": ""
+    },
+    {
+      "key": "jinying",
+      "name": "金鹰资源",
+      "type": 1,
+      "api": "https://www.jinyingapi.com/api.php/provide/vod/?ac=list",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
       "ext": ""
     }
   ],
   "sitesParams": [],
   "parses": [
     {
-      "name": "聚合修复",
+      "name": "聚合解析",
       "type": 1,
       "url": "",
       "ext": {
-        "flag": [
-          "qq","qq.sourceustv","qq.gnt","qq.qq",
-          "qiyi","qiyi.qiyi","qiyi.renrenmi","qiyi.qiy",
-          "youku","youku.youku","youku.youkubi",
-          "imgo","imgo.mgtv","imgo.mgtv818",
-          "sohu","sohu.tv","sohu.tvsohu",
-          "1905","1905.1905",
-          "mgtv","mgtv.mgtv",
-          "le","le.le",
-          "xigua","xigua.xigua"
-        ]
+        "flag": ["youku","qq","qiyi","imgo","sohu","mgtv","le","xigua"]
       }
     },
     {
-      "name": "官方解析",
+      "name": "万能解析",
       "type": 0,
       "url": "https://jx.playerjy.com/?url=",
       "ext": {
-        "flag": ["qq","qiyi","youku","imgo","sohu","mgtv","le","xigua","1905"]
+        "flag": ["youku","qq","qiyi","imgo","sohu","mgtv","le","xigua"]
       }
     }
   ],
-  "flags": [
-    "qq","qiyi","youku","imgo","sohu","mgtv","le","xigua","1905",
-    "qq.sourceustv","qq.gnt","qq.qq",
-    "qiyi.qiyi","qiyi.renrenmi","qiyi.qiy",
-    "youku.youku","youku.youkubi",
-    "imgo.mgtv","imgo.mgtv818",
-    "sohu.tv","sohu.tvsohu",
-    "1905.1905",
-    "mgtv.mgtv",
-    "le.le",
-    "xigua.xigua"
-  ],
+  "flags": ["youku","qq","qiyi","imgo","sohu","mgtv","le","xigua"],
   "lives": [
     {
       "name": "央视直播",
       "type": 0,
-      "url": "https://raw.githubusercontent.com/Er PioneerTV/IPTV/main/cctv.m3u",
+      "url": "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u",
       "epg": "https://epg.51zmt.top:8000/api/diyp/?ch={epg}&date={date}",
       "ua": "",
       "click": ""
     },
     {
-      "name": "卫视直播",
+      "name": "地方台直播",
       "type": 0,
-      "url": "https://raw.githubusercontent.com/Er PioneerTV/IPTV/main/st.m3u",
+      "url": "https://raw.githubusercontent.com/kimwang1978/tvboxlives/main/mylive.txt",
       "epg": "https://epg.51zmt.top:8000/api/diyp/?ch={epg}&date={date}",
       "ua": "",
       "click": ""
